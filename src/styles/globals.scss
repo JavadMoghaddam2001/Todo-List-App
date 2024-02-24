@@ -1,0 +1,101 @@
+//Global styles that is applied to all parts of project
+//resets
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: light;
+  src: url("../../public/fonts/iranyekanweblight.ttf");
+}
+@font-face {
+  font-family: regular;
+  src: url("../../public/fonts/iranyekanwebregular.ttf");
+}
+@font-face {
+  font-family: bold;
+  src: url("../../public/fonts/iranyekanwebbold.ttf");
+}
+//root variables
+:root {
+  --color1: #0d929a;
+  --color2: #ffffff26;
+  --color3: #f1c400;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color1);
+  font-family: light;
+
+  //For custom scrollbar
+
+  ::-webkit-scrollbar {
+    width: 7.5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(200, 200, 200);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #086065;
+    border-radius: 10px;
+  }
+}
+
+.section {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  h1 {
+    top: calc(12.5vh - 40px);
+    right: 15%;
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-family: bold;
+  }
+  div.container {
+    width: 800px;
+    height: 480px;
+  }
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important ;
+}
